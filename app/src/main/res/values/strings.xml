@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fr">Home Fr</string>
+    <string name="second_fr">Second Fr</string>
+    <string name="third_fr">Third Fr</string>
+    <string name="fourth_fr">Fourth Fr</string>
+
+    <string name="home_fragment_title">Home fragment</string>
+    <string name="second_fragment_title">Second fragment</string>
+    <string name="third_fragment_title">Third fragment</string>
+    <string name="fourth_fragment_title">Fourth fragment</string>
+
+    <string name="increase_first_counter">Increase first counter</string>
+    <string name="increase_second_counter">Increase second counter</string>
+    <string name="increase_third_counter">Increase third counter</string>
+    <string name="increase_fourth_counter">Increase fourth counter</string>
+
+    <string name="show_first_counter">Show first counter</string>
+    <string name="show_second_counter">Show second counter</string>
+    <string name="show_third_counter">Show third counter</string>
+    <string name="show_fourth_counter">Show fourth counter</string>
+
+    <string name="first_counter_value">First counter value</string>
+    <string name="second_counter_value">Second counter value</string>
+    <string name="third_counter_value">Third counter value</string>
+    <string name="fourth_counter_value">Fourth counter value</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeNavigation">
+
+    <navigation android:id="@+id/homeNavigation"
+        app:startDestination="@id/homeFragment">
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.example.fragments.firstscreen.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home" >
+            <action
+                android:id="@+id/action_homeFragment_to_homeCounterFragment"
+                app:destination="@id/homeCounterFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/homeCounterFragment"
+            android:name="com.example.fragments.firstscreen.HomeCounterFragment"
+            android:label="fragment_home_counter"
+            tools:layout="@layout/fragment_home_counter" >
+            <argument
+                android:name="counterValue"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/fourthNavigation"
+        app:startDestination="@id/fourthFragment">
+        <fragment
+            android:id="@+id/fourthFragment"
+            android:name="com.example.fragments.fourthscreen.FourthFragment"
+            android:label="fragment_fourth"
+            tools:layout="@layout/fragment_fourth" >
+            <action
+                android:id="@+id/action_fourthFragment_to_fouthCounterFragment"
+                app:destination="@id/fouthCounterFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/fouthCounterFragment"
+            android:name="com.example.fragments.fourthscreen.FourthCounterFragment"
+            android:label="fragment_fouth_counter"
+            tools:layout="@layout/fragment_fouth_counter" >
+            <argument
+                android:name="counterValue"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/secondNavigation"
+        app:startDestination="@id/secondFragment">
+        <fragment
+            android:id="@+id/secondFragment"
+            android:name="com.example.fragments.secondscreen.SecondFragment"
+            android:label="fragment_second"
+            tools:layout="@layout/fragment_second" >
+            <action
+                android:id="@+id/action_secondFragment_to_secondCounterFragment"
+                app:destination="@id/secondCounterFragment"
+                app:popUpToInclusive="false" />
+        </fragment>
+        <fragment
+            android:id="@+id/secondCounterFragment"
+            android:name="com.example.fragments.secondscreen.SecondCounterFragment"
+            android:label="fragment_second_counter"
+            tools:layout="@layout/fragment_second_counter" >
+            <argument
+                android:name="counterValue"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/thirdNavigation"
+        app:startDestination="@id/thirdFragment">
+        <fragment
+            android:id="@+id/thirdFragment"
+            android:name="com.example.fragments.thirdscreen.ThirdFragment"
+            android:label="fragment_third"
+            tools:layout="@layout/fragment_third" >
+            <action
+                android:id="@+id/action_thirdFragment_to_thirdCounterFragment"
+                app:destination="@id/thirdCounterFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/thirdCounterFragment"
+            android:name="com.example.fragments.thirdscreen.ThirdCounterFragment"
+            android:label="fragment_third_counter"
+            tools:layout="@layout/fragment_third_counter" >
+            <argument
+                android:name="counterValue"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </fragment>
+    </navigation>
+</navigation>

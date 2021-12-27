@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNavigation"
+        android:icon="@drawable/ic_home"
+        android:contentDescription="@string/home_fr"
+        android:title="@string/home_fr" />
+    <item
+        android:id="@+id/secondNavigation"
+        android:icon="@drawable/ic_list"
+        android:contentDescription="@string/second_fr"
+        android:title="@string/second_fr" />
+    <item
+        android:id="@+id/thirdNavigation"
+        android:icon="@drawable/ic_basket"
+        android:contentDescription="@string/third_fr"
+        android:title="@string/third_fr" />
+    <item
+        android:id="@+id/fourthNavigation"
+        android:icon="@drawable/ic_check"
+        android:contentDescription="@string/fourth_fr"
+        android:title="@string/fourth_fr" />
+</menu>
